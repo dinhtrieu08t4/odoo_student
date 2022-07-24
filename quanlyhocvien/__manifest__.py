@@ -15,6 +15,7 @@
     'data': [
         "security/ir.model.access.csv",
         "views/student_views.xml",
+        "views/class_views.xml",
     ],
     'demo': [],
     'qweb': [

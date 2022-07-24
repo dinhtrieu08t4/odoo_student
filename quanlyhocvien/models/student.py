@@ -17,3 +17,6 @@ class Students(models.Model):
     native_country = fields.Many2one("res.country.state", "Native Country", domain="[('country_id','=',241)]")
     identity_card = fields.Integer("Identity Card")
     gender = fields.Selection(gender_list,"Gender")
+    phone = fields.Char("Phone")
+    class_id = fields.Many2one("school.classes", "Class")
+

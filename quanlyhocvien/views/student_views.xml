@@ -13,11 +13,17 @@
                             <h1><field name="name" class="oe_inline"/></h1>
                         </div>
                         <group>
-                            <field name="student_code"/>
-                            <field name="date_of_birth"/>
-                            <field name="native_country"/>
-                            <field name="identity_card"/>
-                            <field name="gender"/>
+                            <group>
+                                <field name="student_code"/>
+                                <field name="date_of_birth"/>
+                                <field name="native_country"/>
+                                <field name="identity_card"/>
+                            </group>
+                            <group>
+                                <field name="gender"/>
+                                <field name="phone"/>
+                                <field name="class_id"/>
+                            </group>
                         </group>
                     </sheet>
                 </form>
@@ -45,6 +51,8 @@
                     <field name="native_country"/>
                     <field name="identity_card"/>
                     <field name="gender"/>
+                    <field name="phone"/>
+                    <field name="class_id"/>
                 </tree>
             </field>
         </record>
@@ -61,7 +69,7 @@
         
 
         <!-- Menu -->
-        <menuitem id="menu_school_root" name="Shool Manager" sequence="7"/>
+        <menuitem id="menu_school_root" name="Student Manager" sequence="7"/>
         <menuitem id="menu_registration_root" name="Student" parent="menu_school_root" sequence="7"/>
         <menuitem id="menu_student" name="Student Registration" action="student_list_action" parent="menu_registration_root"/>
     </data>
